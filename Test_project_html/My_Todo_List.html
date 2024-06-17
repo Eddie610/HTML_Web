@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="bootstrap.css">
+<style>
+   #LS1 .form-control {
+  border-color: transparent;
+}
+#LS1 .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+</style>
+
+</head>
+<body>
+    <section class="h-200">
+        <div class="container  h-100">
+          <div class="row  justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card" id="LS1" style="border-radius: .75rem; background-color: rgb(206, 230, 241);">
+                <div class="card-body ">
+      
+                  <p class="h1 text-center  text-primary">
+                    
+                    <u>My Todo-s</u>
+                  </p>
+      
+                 
+                    <div class="card">
+                      <div class="card-body">
+                        <div class=" align-items-left">
+                          <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
+                            placeholder="Add new...">
+                          
+                          <div>
+                            <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Add</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+      
+                  <hr>
+      
+                  <div class=" justify-content-end align-items-center ">
+                    <p class="small text-muted">Filter</p>
+                    <select >
+                      <option value="1">All</option>
+                      <option value="2">Completed</option>
+                      <option value="3">Active</option>
+                      <option value="4">Out dated</option>
+                    </select>
+                    <p class="small text-muted">Sort</p>
+                    <select data-mdb-select-init>
+                      <option value="1">Added date</option>
+                      <option value="2">Out dated</option>
+                    </select>
+                    
+                  </div>
+      
+                  <ul class="list-group list-group-horizontal bg-transparent">
+                    <li
+                      class="list-group-item  align-items-center  rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
+                          aria-label="..." checked />
+                      </div>
+                    </li>
+                    <li class="list-group-item  bg-transparent">
+                      <p class="lead fw-normal mb-0">Buy groceries for next week</p>
+                    </li>
+                    
+                  </ul>
+                  <ul class="list-group list-group-horizontal rounded-0">
+                    <li
+                      class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked2"
+                          aria-label="..." />
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item  bg-transparent">
+                      <p class="lead fw-normal mb-0">Renew car insurance</p>
+                    </li>
+                    <li class="list-group-item  align-items-center  bg-transparent">
+                      <div
+                        class="py-2 px-3 me-2 border border-warning align-items-center bg-body-tertiary">
+                        <p class="small mb-0">
+                          <a href="#!" data-mdb-tooltip-init title="Due on date">
+                            <i class="fas fa-hourglass-half me-2 text-warning"></i>
+                          </a>
+                          28th Jun 2020
+                        </p>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                  <ul class="list-group list-group-horizontal rounded-0 mb-2">
+                    <li
+                      class="list-group-item  align-items-center bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked3"
+                          aria-label="..." />
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item  align-items-center bg-transparent">
+                      <p class="lead fw-normal mb-0 bg-body-tertiary w-100 ms-n2 ps-2 py-1 rounded">Sign up for online
+                        course</p>
+                    </li>
+                    
+                  </ul>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>
