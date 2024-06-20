@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTodo-List</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script>alert("My Todo-s")</script>
+    <link rel="stylesheet" href="Tdo.css">
+</head>
+<body>
+   
+    <div class="container p-3 h-100 bg-info " >
+    <div class="row">
+        <div class="col">
+    
+    <header>
+    <h1><u>My Todo-s</u></h1>
+   </header>  
+   <div class="card clear"  style="border-radius: .75rem;"  >
+    <div class="card-body">
+     
+     <div class="d-flex">
+        <input type="text" placeholder="Add new" class=" form-control form-control-lg" width="30px" oncopy="fun()">
+        <input type="date">
+       <!--  <button class="btn btn-primary"class="btn btn-primary"  >Add</button> -->
+       <input type="button" class="btn btn-primary" onclick="fun()" value="Add">
+        <script>
+         function fun() { 
+            document.getElementById("result").innerHTML = alert("You have added new data !"); }
+        </script>
+        <p> 
+            <div id = "result"> </div> 
+         </p> 
+
+
+     </div>
+    </div>
+    
+     <div class="card bg-transparent">
+        <div class="card-body">
+        <div class="d-flex justify-content-end">
+            <p class="small">Filter</p>
+                    <select class="d-flex"data-mdb-select-init>
+                      <option value="1">All</option>
+                      <option value="2">Completed</option>
+                      <option value="3">Active</option>
+                      <option value="4">Out dated</option>
+                    </select>
+                    <p class="small">Sort</p>
+                    <select class="d-flex" data-mdb-select-init>
+                      <option value="1">Added date</option>
+                      <option value="2">Out dated</option>
+                    </select>
+        </div>
+        </div>
+     </div>
+     </div>
+          <div class="container p-3">
+            <ul class="list-group ">
+           <li class="list-group-item align-items-center  rounded-0 border-0 bg-transparent "> <input type="checkbox"> <p>Buy my glocery</p> </li>  
+           <br>
+           <li class="list-group-item align-items-center  rounded-0 border-0 bg-transparent "> <input type="checkbox"> <p>Pay my insurance </p> </li>
+           <br>
+           <li class="list-group-item align-items-center  rounded-0 border-0 bg-transparent "> <input type="checkbox"> <p>Schedule my travels</p> </li>
+           <br>
+           <li class="list-group-item align-items-center  rounded-0 border-0 bg-transparent "> <input type="checkbox"> <p>Pay my rental fees</p> </li>
+            
+            
+            </ul>
+          </div>
+</div>
+</div>
+</div>
+    </div>
+
+</body>
+</html>

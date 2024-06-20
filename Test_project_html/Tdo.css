@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+.clear{
+background-color: aquamarine;
+}
