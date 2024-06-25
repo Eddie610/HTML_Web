@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<title>Send request and receive response using XML</title> 
+<meta name="description" content="HTML and JavaScript code of example of sending and receiving data using XML"> 
+<link href="../includes/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {padding-top: 40px; padding-left: 10%; 
+margin: 30px; border-radius: 7.5rem; background-color: aqua;
+}
+li {list-style: none; margin:5px 0 5px 0; color:#FF0000}
+</style>
+</head>
+<body>
+    <p id="demo"></p>
+    <div class="row bg-primary container">
+<div class="col">
+<div class="card">
+  <div class="cardbody">
+
+ 
+
+<form class="well-home span6 form-horizontal" name="xml-ajax" id="xml-ajax">
+<div class="control-group">
+              <label class="control-label" for="userid">USER ID</label>
+              <div class="controls d-flex">
+                <input type="text" id="userid" width="20px" placeholder="Required, 5 to 12 chars">
+				<li id="msg1"></li>
+              </div>
+ </div>
+ <div class="control-group">
+              <label class="control-label" for="password">Password</label>
+              <div class="controls">
+                <input type="password" id="password" width="20px" placeholder="Required, 7 to 12 chars">
+				<li id="msg2"></li>
+              </div>
+ </div>
+ <div class="control-group">
+              <label class="control-label" for="name">Name</label>
+              <div class="controls d-flex">
+                <input type="text" id="name" width="20px" placeholder="Required, alphabets & space only">
+              </div>
+ </div>
+ <div class="control-group">
+              <label class="control-label" for="country">Country</label>
+              <div class="controls">
+                <select class="span3">
+                <option>UGANDA</option>
+                <option>INDIA</option>
+                <option>USA</option>
+                <option>TANZANIA</option>
+                <option>UK</option>
+                <option>KENYA</option>
+                <option>CANADA</option>
+                <option>FRANCE</option>
+              </select>
+              </div>
+ </div> 
+<div class="control-group">
+              <label class="control-label" for="zip">ZIP Code</label>
+              <div class="controls d-flex">
+                <input type="text" id="zip" width="20px" placeholder="Required, numeric & 6 chars">
+              </div>
+ </div>
+ <div class="control-group">
+              <label class="control-label" for="email">Email</label>
+              <div class="controls d-flex">
+                <input type="text" id="email" width="20px" placeholder="Required">
+              </div>
+ </div>
+ <div class="control-group">
+              <label class="control-label" for="mfg">Gender</label>
+              <div class="controls">
+               <label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Male
+</label>
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> Female
+</label>
+              </div>
+ </div>
+ <div class="control-group">
+              <label class="control-label" for="lang">Language</label>
+              <div class="controls">
+                <label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+  English
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+  Non-English
+</label>
+              </div>
+ </div>
+<div class="control-group">
+              <div class="controls">
+                <button type="submit" onclick="fun()" class="tn tn-success">Submit</button>
+              </div>
+ </div>
+ <script>
+     function fun() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+             document.getElementById("demo").innerHTML = this.responseText;
+            }
+          }
+          xhttp.open("POST", "dashboard.html", true);
+          xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+          xhttp.send();
+        }
+ </script>
+  </div>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
